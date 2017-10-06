@@ -122,6 +122,12 @@ class BlankSlatePageTemplater {
 
 		global $post;
 
+		if ( ! is_singular() ) {
+			
+			return $template;
+			
+		}
+		
 		if ( ! isset( $this->templates[ get_post_meta(
 				$post->ID, '_wp_page_template', true
 			) ] )
