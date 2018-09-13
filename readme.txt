@@ -3,8 +3,8 @@ Contributors: areimann
 Donate link: http://aaronreimann.com/wordpress
 Tags: blank, empty, canvas, landing, page builder
 Requires at least: 4.0
-Tested up to: 4.8
-Stable 1.1.1
+Tested up to: 4.9.8
+Stable 1.1.2
 Stable tag: trunk
 
 This plugin creates a page template giving you a blank page so “the_content()” of the page is all that is displayed, no header, no footer.
@@ -33,6 +33,9 @@ This plugin will load everything that is normally included in the wp_head() and 
 This is a fork of a plugin that adds a template selection written by [Harri Bell-Thomas](https://twitter.com/harribellthomas)
 
 == Changelog ==
+
+= 1.1.2 =
+* Showing title for themes that don't support title-tag
 
 = 1.1.1 =
 * Template that is loaded now loads viewport correctly
