@@ -4,7 +4,7 @@ Donate link: http://aaronreimann.com/wordpress
 Tags: blank, empty, canvas, landing, page builder
 Requires at least: 4.7
 Requires PHP: 5.3
-Tested up to: 4.9.8
+Tested up to: 5.0
 Stable tag: 1.1.3
 
 This plugin creates a page template giving you a blank page so “the_content()” of the page is all that is displayed, no header, no footer.
@@ -22,9 +22,9 @@ This creates a page template giving you a blank page so only the content of the 
 == Installation ==
 
 1. Unzip and upload the plugin into the plugins directory and then activate it.
-1. Go to Pages
-1. Add New, or select an existing page
-1. Scroll down on the right (in theory) and select the page template called “Blank Slate”
+2. Go to Pages
+3. Add New, or select an existing page
+4. Scroll down on the right (in theory) and select the page template called “Blank Slate”
 
 == Other Notes ==
 
@@ -33,13 +33,15 @@ This plugin will load everything that is normally included in the wp_head() and 
 == Upgrade Notice ==
 
 = 1.1.3 =
-* The latest version of Blank Slate requires WordPress version 4.7 or greater!
+* The latest version of Blank Slate requires WordPress version 4.7 or greater! Compatible with version 5.0.
 
 == Changelog ==
 
 = 1.1.3 =
 * Removed old approach that is only supported in WordPress version 4.6 and older.
 * Updated code for better integration with the pro version.
+* Updated code to better adhere to WordPress coding standards.
+* Tested in WordPress 5.0.
 
 = 1.1.2 =
 * Showing title for themes that don't support title-tag
