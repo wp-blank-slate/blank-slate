@@ -1,0 +1,16 @@
+{
+  "name": "blank-slate",
+  "description": "This plugin creates a page template giving you a blank page so “the_content()” of the page is all that is displayed, no header, no footer.",
+  "author": "Micah Wood <micah@wpscholar.com> (http://wpscholar.com)",
+  "license": "GPL-2.0+",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aaronreimann/blank-slate.git"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "shelljs": "^0.8.3"
+  }
+}
