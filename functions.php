@@ -26,18 +26,21 @@ if ( ! function_exists( 'blank_slate_bootstrap' ) ) {
 			'template_include',
 			function ( $template ) {
 
-				$assigned_template = get_post_meta( get_the_ID(), '_wp_page_template', true );
+				if ( is_singular() ) {
 
-				if ( blank_slate_get_template( $assigned_template ) ) {
+					$assigned_template = get_post_meta( get_the_ID(), '_wp_page_template', true );
 
-					if ( file_exists( $assigned_template ) ) {
-						return $assigned_template;
-					}
+					if ( blank_slate_get_template( $assigned_template ) ) {
 
-					$file = wp_normalize_path( plugin_dir_path( __FILE__ ) . '/templates/' . $assigned_template );
+						if ( file_exists( $assigned_template ) ) {
+							return $assigned_template;
+						}
 
-					if ( file_exists( $file ) ) {
-						return $file;
+						$file = wp_normalize_path( plugin_dir_path( __FILE__ ) . '/templates/' . $assigned_template );
+
+						if ( file_exists( $file ) ) {
+							return $file;
+						}
 					}
 				}
 
