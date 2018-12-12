@@ -7,6 +7,8 @@ if ( ! function_exists( 'blank_slate_bootstrap' ) ) {
 	 */
 	function blank_slate_bootstrap() {
 
+		load_plugin_textdomain( 'blank-slate', false, __DIR__ . '/languages' );
+
 		// Register the blank slate template
 		blank_slate_add_template(
 			'blank-slate-template.php',
