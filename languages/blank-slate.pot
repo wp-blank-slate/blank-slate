@@ -1,0 +1,36 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Blank Slate\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-12 16:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-5.0"
+
+#. Author of the plugin
+msgid "Aaron Reimann"
+msgstr ""
+
+#. Name of the plugin
+#: functions.php:13
+msgid "Blank Slate"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://aaronreimann.com/wordpress"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"This plugin creates a page template giving you a blank page so “the_content()"
+"” of the page is all that is displayed, no header, no footer."
+msgstr ""
