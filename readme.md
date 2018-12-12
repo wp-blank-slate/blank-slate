@@ -30,7 +30,9 @@ You must have commit access to both this GitHub repository and the WordPress.org
 #### Check In
 - Be sure that the version number in the plugin header file and the stable tag in the readme.txt file have been updated.  Add changelog and upgrade notice entries to the readme.txt file.
 - Run `gulp` from the project root. This will overwrite all files in the `svn/trunk/` directory.
+- Run `svn status` from the SVN directory to see the status of SVN files.
 - Run `svn add {file}` to add any new files to the SVN directory.
+- Run `svn delete {file}` to remove any old files from the SVN directory.
 - Run `svn cp trunk tags/{version}` from the SVN root directory to tag a new release in SVN.
 - Run `svn ci -m "{commit message}"` from the SVN root directory to commit changes to the WordPress plugin directory.
 - Commit changes to git and push to GitHub. Create a new release on GitHub.

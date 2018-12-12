@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Blank Slate
  * Plugin URI:  http://aaronreimann.com/wordpress
- * Version:     1.1.3
+ * Version:     1.1.4
  * Description: This plugin creates a page template giving you a blank page so “the_content()” of the page is all that is displayed, no header, no footer.
  * Author:      Aaron Reimann
  * Author URI:  http://aaronreimann.com/wordpress
