@@ -101,3 +101,20 @@ if ( ! function_exists( 'blank_slate_add_template' ) ) {
 		);
 	}
 }
+
+if ( ! function_exists( 'blank_slate_register_admin_page' ) ) {
+
+	function blank_slate_register_admin_page() {
+		add_menu_page(
+			esc_html__( 'Blank Slate', 'blank-slate' ),
+			esc_html__( 'Blank Slate', 'blank-slate' ),
+			'edit_posts',
+			'blank-slate',
+			function () {
+				require __DIR__ . '/pages/admin.php';
+			},
+			'dashicons-media-default'
+		);
+	}
+
+}

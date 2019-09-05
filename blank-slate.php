@@ -16,3 +16,7 @@
 require __DIR__ . '/functions.php';
 
 add_action( 'plugins_loaded', 'blank_slate_bootstrap' );
+
+if ( is_admin() ) {
+	add_action( 'admin_menu', 'blank_slate_register_admin_page' );
+}
