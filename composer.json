@@ -1,16 +1,27 @@
 {
-    "name": "aaronreimann/blank-slate",
-    "description": "A blank slate for use with WordPress page builders.",
-    "type": "wordpress-plugin",
-    "license": "GPL-2.0-or-later",
-    "authors": [
-		{
-            "name": "Aaron Reimann",
-            "email": "aaronr@clockworkwp.com"
-        },
-		{
-            "name": "Micah Wood",
-            "email": "micah@wpscholar.com"
-        }
-    ]
+  "name": "aaronreimann/blank-slate",
+  "description": "Provides a blank page template for use with WordPress page builders.",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Aaron Reimann",
+      "homepage": "https://aaronreimann.com/"
+    },
+    {
+      "name": "Micah Wood",
+      "homepage": "http://wpscholar.com"
+    }
+  ],
+  "require-dev": {
+    "wpscholar/phpcs-standards-wpscholar": "@stable"
+  },
+  "scripts": {
+    "fix": "vendor/bin/phpcbf . -s",
+    "lint": "vendor/bin/phpcs . -s"
+  },
+  "scripts-descriptions": {
+    "fix": "Automatically fix coding standards issues where possible.",
+    "lint": "Check files against coding standards."
+  }
 }
