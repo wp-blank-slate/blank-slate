@@ -1,16 +1,39 @@
 {
   "name": "blank-slate",
-  "description": "This plugin creates a page template giving you a blank page so “the_content()” of the page is all that is displayed, no header, no footer.",
-  "author": "Micah Wood <micah@wpscholar.com> (http://wpscholar.com)",
-  "license": "GPL-2.0+",
+  "description": "Provides a blank page template for use with WordPress page builders.",
+  "author": "Micah Wood <micah@wpscholar.com> (https://wpscholar.com)",
+  "license": "GPL-2.0-or-later",
   "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/aaronreimann/blank-slate.git"
   },
-  "dependencies": {
-    "del": "^3.0.0",
-    "gulp": "^4.0.0",
-    "shelljs": "^0.8.3"
+  "bugs": {
+    "url": "https://github.com/wpscholar-wp-plugins/blank-slate/issues"
+  },
+  "homepage": "https://github.com/wpscholar-wp-plugins/blank-slate#readme",
+  "scripts": {
+    "i18n": "wpi18n addtextdomain && wpi18n makepot",
+    "lint": "npx yamllint **/*.yml",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.5",
+    "node-wp-i18n": "^1.2.3",
+    "yaml-lint": "^1.2.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.yml": [
+      "npm run lint"
+    ],
+    "**/*.php": [
+      "composer run-script lint"
+    ]
   }
 }
