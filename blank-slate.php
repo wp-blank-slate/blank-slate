@@ -1,21 +1,23 @@
 <?php
 /**
  * Plugin Name: Blank Slate
- * Plugin URI:  http://aaronreimann.com/wordpress
- * Version:     1.1.4
- * Description: This plugin creates a page template giving you a blank page so “the_content()” of the page is all that is displayed, no header, no footer.
+ * Description: Provides a blank page template for use with WordPress page builders.
+ * Plugin URI:  https://wpblankslate.com/
+ * Version:     1.1.5
  * Author:      Aaron Reimann
- * Author URI:  http://aaronreimann.com/wordpress
+ * Author URI:  https://aaronreimann.com/
+ * Requires at least: 4.7
+ * Requires PHP: 5.3
+ * Text Domain: blank-slate
+ * Domain Path: languages
  * License:     GPL2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: blank-slate
- * Domain Path: /languages
+ *
+ * Copyright 2019-2020 by Aaron Reimann & Micah Wood - All rights reserved.
+ *
+ * @package BlankSlate
  */
 
 require __DIR__ . '/functions.php';
 
 add_action( 'plugins_loaded', 'blank_slate_bootstrap' );
-
-if ( is_admin() ) {
-	add_action( 'admin_menu', 'blank_slate_register_admin_page' );
-}

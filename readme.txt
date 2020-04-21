@@ -1,13 +1,13 @@
 === Blank Slate ===
-Contributors: areimann, wpscholar, woodent
-Donate link: http://aaronreimann.com/wordpress
+Contributors: areimann, wpscholar
+Donate link: https://www.paypal.me/wpdonate
 Tags: blank, empty, canvas, landing, page builder
 Requires at least: 4.7
 Requires PHP: 5.3
-Tested up to: 5.0
-Stable tag: 1.1.4
+Tested up to: 5.4
+Stable tag: 1.1.5
 
-This plugin creates a page template giving you a blank page so “the_content()” of the page is all that is displayed, no header, no footer.
+Provides a blank page template for use with WordPress page builders.
 
 == Description ==
 
@@ -28,9 +28,12 @@ This creates a page template giving you a blank page so only the content of the 
 
 == Other Notes ==
 
-This plugin will load everything that is normally included in the wp_head() and wp_footer(), so all scripts should load as normal.
+This plugin will load everything that is normally included in the wp_head() and wp_footer(), so all scripts and styles should load as normal.
 
 == Upgrade Notice ==
+
+= 1.1.5 =
+* Minor code updates. Compatible with WordPress 5.4.
 
 = 1.1.4 =
 * Added support for language translations. Minor bugfix. Compatible with WordPress 5.0.
@@ -39,6 +42,9 @@ This plugin will load everything that is normally included in the wp_head() and 
 * The latest version of Blank Slate requires WordPress version 4.7 or greater! Compatible with version 5.0.
 
 == Changelog ==
+
+= 1.1.5 =
+* Updated code to meet coding standards.
 
 = 1.1.4 =
 * Added support for language translations.
