@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Plugin Name: Blank Slate
  * Plugin URI:  http://aaronreimann.com/wordpress

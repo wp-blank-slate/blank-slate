@@ -87,7 +87,7 @@ if ( ! function_exists( 'blank_slate_add_template' ) ) {
 	/**
 	 * Register a new template.
 	 *
-	 * @param string $file Template file/path
+	 * @param string $file  Template file/path
 	 * @param string $label Label for the template
 	 */
 	function blank_slate_add_template( $file, $label ) {
@@ -104,6 +104,9 @@ if ( ! function_exists( 'blank_slate_add_template' ) ) {
 
 if ( ! function_exists( 'blank_slate_register_admin_page' ) ) {
 
+	/**
+	 * Register the admin page.
+	 */
 	function blank_slate_register_admin_page() {
 		add_menu_page(
 			esc_html__( 'Blank Slate', 'blank-slate' ),
@@ -116,5 +119,4 @@ if ( ! function_exists( 'blank_slate_register_admin_page' ) ) {
 			'dashicons-media-default'
 		);
 	}
-
 }
