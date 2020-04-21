@@ -1,0 +1,16 @@
+{
+    "name": "aaronreimann/blank-slate",
+    "description": "A blank slate for use with WordPress page builders.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+		{
+            "name": "Aaron Reimann",
+            "email": "aaronr@clockworkwp.com"
+        },
+		{
+            "name": "Micah Wood",
+            "email": "micah@wpscholar.com"
+        }
+    ]
+}
