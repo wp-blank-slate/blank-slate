@@ -1,36 +1,38 @@
-#, fuzzy
+# Copyright (C) 2020 Aaron Reimann
+# This file is distributed under the GPL2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Blank Slate\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-12 16:59+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
-"Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Blank Slate 1.1.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/blank-slate\n"
+"POT-Creation-Date: 2020-04-21 14:16:48+00:00\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.2.0; wp-5.0"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: node-wp-i18n 1.2.3\n"
 
-#. Author of the plugin
-msgid "Aaron Reimann"
-msgstr ""
-
-#. Name of the plugin
-#: functions.php:13
+#. Plugin Name of the plugin/theme
 msgid "Blank Slate"
 msgstr ""
 
-#. URI of the plugin
-#. Author URI of the plugin
-msgid "http://aaronreimann.com/wordpress"
+#: pages/admin.php:2
+msgid "Hello World!"
 msgstr ""
 
-#. Description of the plugin
-msgid ""
-"This plugin creates a page template giving you a blank page so “the_content()"
-"” of the page is all that is displayed, no header, no footer."
+#. Plugin URI of the plugin/theme
+msgid "https://wpblankslate.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Provides a blank page template for use with WordPress page builders."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Aaron Reimann"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://aaronreimann.com/"
 msgstr ""
