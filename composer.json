@@ -1,5 +1,5 @@
 {
-  "name": "aaronreimann/blank-slate",
+  "name": "wp-blank-slate/blank-slate",
   "description": "Provides a blank page template for use with WordPress page builders.",
   "type": "wordpress-plugin",
   "license": "GPL-2.0-or-later",
