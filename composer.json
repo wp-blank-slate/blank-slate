@@ -1,27 +1,41 @@
 {
-  "name": "wp-blank-slate/blank-slate",
-  "description": "Provides a blank page template for use with WordPress page builders.",
-  "type": "wordpress-plugin",
-  "license": "GPL-2.0-or-later",
-  "authors": [
-    {
-      "name": "Aaron Reimann",
-      "homepage": "https://aaronreimann.com/"
+    "name": "wp-blank-slate/blank-slate",
+    "description": "Provides a blank page template for use with WordPress page builders.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Aaron Reimann",
+            "homepage": "https://aaronreimann.com/"
+        },
+        {
+            "name": "Micah Wood",
+            "homepage": "http://wpscholar.com"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/wp-blank-slate/blank-slate",
+        "issues": "https://github.com/wp-blank-slate/blank-slate/issues"
     },
-    {
-      "name": "Micah Wood",
-      "homepage": "http://wpscholar.com"
+    "require-dev": {
+        "wpscholar/phpcs-standards-wpscholar": "^1.0",
+        "wp-cli/wp-cli": "^2.4",
+        "wp-cli/i18n-command": "^2.2"
+    },
+    "scripts": {
+        "fix": [
+            "vendor/bin/phpcbf . --standard=WPScholar"
+        ],
+        "i18n": [
+            "vendor/bin/wp i18n make-pot . ./languages/blank-slate.pot --headers='{\"POT-Creation-Date\":null}'"
+        ],
+        "lint": [
+            "vendor/bin/phpcs . --standard=WPScholar -s"
+        ]
+    },
+    "scripts-descriptions": {
+        "fix": "Automatically fix coding standards issues where possible.",
+        "i18n": "Generate a .pot file for translation.",
+        "lint": "Check files against coding standards."
     }
-  ],
-  "require-dev": {
-    "wpscholar/phpcs-standards-wpscholar": "@stable"
-  },
-  "scripts": {
-    "fix": "vendor/bin/phpcbf . -s",
-    "lint": "vendor/bin/phpcs . -s"
-  },
-  "scripts-descriptions": {
-    "fix": "Automatically fix coding standards issues where possible.",
-    "lint": "Check files against coding standards."
-  }
 }

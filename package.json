@@ -1,39 +1,39 @@
 {
-  "name": "blank-slate",
-  "description": "Provides a blank page template for use with WordPress page builders.",
-  "author": "Micah Wood <micah@wpscholar.com> (https://wpscholar.com)",
-  "license": "GPL-2.0-or-later",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/aaronreimann/blank-slate.git"
-  },
-  "bugs": {
-    "url": "https://github.com/wpscholar-wp-plugins/blank-slate/issues"
-  },
-  "homepage": "https://github.com/wpscholar-wp-plugins/blank-slate#readme",
-  "scripts": {
-    "i18n": "wpi18n addtextdomain && wpi18n makepot",
-    "lint": "npx yamllint **/*.yml",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "husky": "^4.2.5",
-    "lint-staged": "^10.1.5",
-    "node-wp-i18n": "^1.2.3",
-    "yaml-lint": "^1.2.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
+    "name": "blank-slate",
+    "description": "Provides a blank page template for use with WordPress page builders.",
+    "author": "Micah Wood <micah@wpscholar.com> (https://wpscholar.com)",
+    "license": "GPL-2.0-or-later",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aaronreimann/blank-slate.git"
+    },
+    "bugs": {
+        "url": "https://github.com/wpscholar-wp-plugins/blank-slate/issues"
+    },
+    "homepage": "https://github.com/wpscholar-wp-plugins/blank-slate#readme",
+    "scripts": {
+        "i18n": "wpi18n addtextdomain && wpi18n makepot",
+        "lint": "npx yamllint **/*.yml",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "husky": "^4.2.5",
+        "lint-staged": "^10.1.5",
+        "node-wp-i18n": "^1.2.3",
+        "yaml-lint": "^1.2.4"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged && npx wpi18n addtextdomain && composer run i18n"
+        }
+    },
+    "lint-staged": {
+        "**/*.yml": [
+            "yamllint --ignore=node_modules/**"
+        ],
+        "**/*.php": [
+            "vendor/bin/phpcs --standard=WPScholar -s"
+        ]
     }
-  },
-  "lint-staged": {
-    "**/*.yml": [
-      "npm run lint"
-    ],
-    "**/*.php": [
-      "composer run-script lint"
-    ]
-  }
 }

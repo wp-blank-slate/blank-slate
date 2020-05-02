@@ -1,6 +1,6 @@
 # Blank Slate
 
-![Deploy to WordPress.org](https://github.com/aaronreimann/blank-slate/workflows/Deploy%20to%20WordPress.org/badge.svg?branch=master&event=push)
+![Deploy to WordPress.org](https://github.com/wp-blank-slate/blank-slate/workflows/Deploy%20to%20WordPress.org/badge.svg?branch=master&event=push)
 
 ## Description
 
