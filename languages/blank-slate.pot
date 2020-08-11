@@ -1,8 +1,8 @@
 # Copyright (C) 2020 Aaron Reimann
-# This file is distributed under the GPL2.
+# This file is distributed under the GPL V2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Blank Slate 1.1.5\n"
+"Project-Id-Version: Blank Slate 1.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/blank-slate\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgid "Blank Slate"
 msgstr ""
 
 #. Plugin URI of the plugin
-msgid "https://wpblankslate.com/"
+msgid "https://wpblankslate.com"
 msgstr ""
 
 #. Description of the plugin
@@ -34,7 +34,7 @@ msgid "Aaron Reimann"
 msgstr ""
 
 #. Author URI of the plugin
-msgid "https://aaronreimann.com/"
+msgid "https://aaronreimann.com"
 msgstr ""
 
 #: pages/admin.php:2
