@@ -4,43 +4,39 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Blank Slate 1.1.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/blank-slate\n"
-"POT-Creation-Date: 2020-05-02 15:51:04+00:00\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: node-wp-i18n 1.2.3\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: blank-slate\n"
 
-#. Plugin Name of the plugin/theme
+#. Plugin Name of the plugin
+#: functions.php:15
+#: functions.php:118
+#: functions.php:119
 msgid "Blank Slate"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wpblankslate.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Provides a blank page template for use with WordPress page builders."
+msgstr ""
+
+#. Author of the plugin
+msgid "Aaron Reimann"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://aaronreimann.com/"
 msgstr ""
 
 #: pages/admin.php:2
 msgid "Hello World!"
-msgstr ""
-
-#: vendor/wp-cli/wp-cli/php/utils-wp.php:196
-msgid "Inactive Widgets"
-msgstr ""
-
-#: vendor/wp-cli/wp-cli/php/utils-wp.php:199
-msgid "Drag widgets here to remove them from the sidebar but keep their settings."
-msgstr ""
-
-#. Plugin URI of the plugin/theme
-msgid "https://wpblankslate.com/"
-msgstr ""
-
-#. Description of the plugin/theme
-msgid "Provides a blank page template for use with WordPress page builders."
-msgstr ""
-
-#. Author of the plugin/theme
-msgid "Aaron Reimann"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "https://aaronreimann.com/"
 msgstr ""
