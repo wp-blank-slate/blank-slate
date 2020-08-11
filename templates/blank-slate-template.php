@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<head>
+		<meta charset="<?php bloginfo( 'charset' ); ?>">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
 
-	<?php if ( ! get_theme_support( 'title-tag' ) ) : ?>
-		<title><?php wp_title(); ?></title>
-	<?php endif; ?>
+		<?php if ( ! get_theme_support( 'title-tag' ) ) : ?>
+			<title><?php wp_title(); ?></title>
+		<?php endif; ?>
 
-	<?php wp_head(); ?>
-</head>
+		<?php wp_head(); ?>
+	</head>
 
-<body <?php body_class( 'blank-slate' ); ?>>
+	<body <?php body_class( 'blank-slate' ); ?>>
+		<?php wp_body_open(); ?>
 
-<?php while ( have_posts() ) : ?>
+		<?php while ( have_posts() ) : ?>
 
-	<?php the_post(); ?>
+			<?php the_post(); ?>
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<?php the_content(); ?>
+				<?php the_content(); ?>
 
-	</article>
+			</article>
 
-<?php endwhile; ?>
+		<?php endwhile; ?>
 
-<?php wp_footer(); ?>
+		<?php wp_footer(); ?>
 
-</body>
+	</body>
 </html>
