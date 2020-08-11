@@ -38,8 +38,14 @@ if ( ! function_exists( 'blank_slate_bootstrap' ) ) {
 							return $assigned_template;
 						}
 
-						$file = wp_normalize_path( plugin_dir_path( __FILE__ ) . '/templates/' . $assigned_template );
+						// Allow themes to override plugin templates
+						$file = locate_template( wp_normalize_path( '/blank-slate/' . $assigned_template ) );
+						if ( ! empty( $file ) ) {
+							return $file;
+						}
 
+						// Fetch template from plugin directory
+						$file = wp_normalize_path( plugin_dir_path( __FILE__ ) . '/templates/' . $assigned_template );
 						if ( file_exists( $file ) ) {
 							return $file;
 						}
