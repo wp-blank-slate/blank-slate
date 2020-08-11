@@ -4,8 +4,8 @@ Donate link: https://www.paypal.me/wpdonate
 Tags: blank, empty, canvas, landing, page builder
 Requires at least: 4.7
 Requires PHP: 5.3
-Tested up to: 5.4
-Stable tag: 1.1.5
+Tested up to: 5.5
+Stable tag: 1.2
 
 Provides a blank page template for use with WordPress page builders.
 
@@ -32,6 +32,9 @@ This plugin will load everything that is normally included in the wp_head() and 
 
 == Upgrade Notice ==
 
+= 1.2 =
+* Themes can now override plugin templates. Minor security and maintenance fixes. Tested with WordPress version 5.5.
+
 = 1.1.5 =
 * Minor code updates. Compatible with WordPress 5.4.
 
@@ -42,6 +45,11 @@ This plugin will load everything that is normally included in the wp_head() and 
 * The latest version of Blank Slate requires WordPress version 4.7 or greater! Compatible with version 5.0.
 
 == Changelog ==
+
+= 1.2 =
+* Enhancement: Allow themes to override plugin templates
+* Maintenance: Add wp_body_open() template tag
+* Security: Update Lodash version
 
 = 1.1.5 =
 * Updated code to meet coding standards.
