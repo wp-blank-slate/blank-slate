@@ -1,8 +1,8 @@
-# Copyright (C) 2020 Aaron Reimann
+# Copyright (C) 2020 Aaron Reimann & Micah Wood
 # This file is distributed under the GPL V2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Blank Slate 1.2\n"
+"Project-Id-Version: Blank Slate 1.2.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/blank-slate\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgid "Provides a blank page template for use with WordPress page builders."
 msgstr ""
 
 #. Author of the plugin
-msgid "Aaron Reimann"
+msgid "Aaron Reimann & Micah Wood"
 msgstr ""
 
 #. Author URI of the plugin
