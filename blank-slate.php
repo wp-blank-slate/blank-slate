@@ -11,10 +11,10 @@
  * Plugin Name:       Blank Slate
  * Plugin URI:        https://wpblankslate.com
  * Description:       Provides a blank page template for use with WordPress page builders.
- * Version:           1.2
+ * Version:           1.2.1
  * Requires PHP:      5.3
  * Requires at least: 4.7
- * Author:            Aaron Reimann
+ * Author:            Aaron Reimann & Micah Wood
  * Author URI:        https://aaronreimann.com
  * Text Domain:       blank-slate
  * Domain Path:       /languages
