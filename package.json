@@ -18,8 +18,8 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "devDependencies": {
-        "husky": "^4.2.5",
-        "lint-staged": "^10.1.5",
+        "husky": "^4.3.6",
+        "lint-staged": "^10.5.3",
         "node-wp-i18n": "^1.2.3",
         "yaml-lint": "^1.2.4"
     },
