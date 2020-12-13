@@ -126,3 +126,18 @@ if ( ! function_exists( 'blank_slate_register_admin_page' ) ) {
 		);
 	}
 }
+
+if ( ! function_exists( 'wp_body_open' ) ) {
+
+	/**
+	 * Add wp_body_open() template tag if it doesn't exist (WP versions less than 5.2).
+	 */
+	function wp_body_open() {
+		/**
+		 * Triggered after the opening body tag.
+		 *
+		 * @since 5.2.0
+		 */
+		do_action( 'wp_body_open' );
+	}
+}
